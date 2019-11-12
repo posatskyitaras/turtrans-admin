@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-dark">
+<html lang="en">
 
 <head>
   <meta charset="utf-8"/>
@@ -21,33 +21,36 @@
   <![endif]-->
 </head>
 
-<body>
-  <section class="bus-signin">
-    
-    
-    <div class="container aside-xxl">
-      
-      <a class="navbar-brand block">Bus System</a>
-      <section class="panel panel-default bg-white m-t-lg">
-        <header class="panel-heading text-center">
-          <strong>Вхід</strong>
-        </header>
-        <form action="index.html" class="panel-body wrapper-lg">
-          <div class="form-group">
-            <label class="control-label">Email</label>
-            <input type="email" placeholder="test@example.com" class="form-control input-lg">
-          </div>
-          <div class="form-group">
-            <label class="control-label">Password</label>
-            <input type="password" id="inputPassword" placeholder="Пароль" class="form-control input-lg">
-          </div>
-          <button type="submit" class="btn btn-primary">Ввійти</button>
+
+<body class="wp-login">  
+
+    <div class="grid">
+
+        <form action="" method="POST" class="form login">
+
+            <a class="navbar-brand block">Bus System</a>
+            <section class="panel panel-default bg-white m-t-lg">
+              <header class="panel-heading text-center">
+                <strong>Вхід</strong>
+              </header>
+              <form action="index.html" class="panel-body wrapper-lg">
+                <div class="form-group">
+                  <label class="control-label">Email</label>
+                  <input type="email" placeholder="test@example.com" class="form-control input-lg">
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Password</label>
+                  <input type="password" id="inputPassword" placeholder="Пароль" class="form-control input-lg">
+                </div>
+                <button type="submit" class="btn btn-primary">Ввійти</button>
+              </form>
+            </section>
+
         </form>
-      </section>
-      
+     
     </div>
-    
-  </section>
+
+
   
   <script src="js/jquery.min.js"></script>
   <!-- Bootstrap -->
