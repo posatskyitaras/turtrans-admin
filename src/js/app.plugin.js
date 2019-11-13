@@ -210,6 +210,7 @@
 		$('.count', $el).fadeOut().fadeIn().text($v+1);
 		$($msg).hide().prependTo($el.find('.list-group')).slideDown().css('display','block');
 	}
+	/* old version
 	var $msg = '<a href="#" class="media list-group-item">'+
                   '<span class="pull-left thumb-sm text-center">'+
                     '<i class="fa fa-envelope-o fa-2x text-success"></i>'+
@@ -218,7 +219,18 @@
                     'Sophi sent you a email<br>'+
                     '<small class="text-muted">1 minutes ago</small>'+
                   '</span>'+
-                '</a>';	
+				'</a>';	
+				*/
+	var $msg = '<a href="#" class="media list-group-item">'+
+				'<span class="pull-left thumb-sm text-center">'+
+				  '<i class="fa fa-ticket fa-2x text-success"></i>'+
+				'</span>'+
+				'<span class="media-body block m-b-none">'+
+				  'Івано-Франківськ - Варшава <br>'+
+				  '<small class="text-muted">1 хвилину тому</small>'+
+				'</span>'+
+			  '</a>';
+
   setTimeout(function(){addMsg($msg);}, 1500);
 
 	// select2 
