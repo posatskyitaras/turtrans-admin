@@ -27,3 +27,8 @@ aside {
 /*
 	*** header and aside end ***
 */
+
+
+li:focus, li:hover, .active {
+  background-color:#2c3942 !important;
+}
