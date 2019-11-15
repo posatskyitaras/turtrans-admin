@@ -11,24 +11,112 @@ aside {
   background-color: #181f24 !important;
 }
 
-.bg-dark.dk, .bg-dark .dk {
-  background-color:  #181f24 !important;
+.bg-dark.dk,
+.bg-dark .dk {
+  background-color: #181f24 !important;
 }
 
-.bg-primary.lter, .bg-primary .lter {
- /* background-color: #232c32;*/
- background-color: #1ab667;
+.bg-primary.lter,
+.bg-primary .lter {
+  /* background-color: #232c32;*/
+  background-color: #1ab667;
 }
 
-.bg-dark.lt, .bg-dark .lt {
-  background-color: #232c32;
+.bg-dark.lt,
+.bg-dark .lt {
+  background-color: #2c3942 !important;
+}
+
+li:focus,
+li:hover,
+.active {
+  background-color: #2c3942 !important;
+}
+
+.nav {
+  li {
+    a {
+      &:focus,
+      &:hover {
+        border-top: 1px solid #2c3942 !important;
+      }
+    }
+  }
+}
+
+.nav-user {
+  li {
+    .dropdown-toggle {
+      &:focus,
+      &:hover {
+        border-top: 0 !important;
+      }
+    }
+  }
+}
+
+.nav-user {
+  .dropdown {
+    .dropdown-menu {
+      li {
+        a {
+          &:focus,
+          &:hover {
+            border-top: 0 !important;
+          }
+        }
+      }
+    }
+    .divider {
+      &:focus,
+      &:hover {
+        background-color: #e5e5e5 !important;
+      }
+    }
+  }
+}
+
+.nav-primary {
+  .nav {
+    li {
+      .nav {
+        a {
+          &:focus,
+          &:hover {
+            border-top: 1px solid transparent !important;
+            border-color: rgba(255, 255, 255, 0.05) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wp-company {
+  background-color: rgba(26, 182, 103, 1) !important;
+  .wp-company-name {
+    background-color: rgba(26, 182, 103, 1) !important;
+    color: #ffffff !important;
+    text-align: center;
+    /* font-size: 15px !important;*/
+    &:focus,
+    &:hover {
+      border-top: 1px solid transparent !important;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #19ad62 !important;
+  }
+}
+
+.button-aside {
+  padding-top: 10px !important;
+  padding: 14px 20px !important;
+  width: auto !important;
 }
 
 /*
 	*** header and aside end ***
 */
-
-
-li:focus, li:hover, .active {
-  background-color:#2c3942 !important;
-}
